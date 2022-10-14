@@ -1,0 +1,104 @@
+<doctype html>
+<head>
+  <style>
+    html {
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    font-family: sans-serif;
+    }
+
+    h1 {
+    text-align: center;
+    padding: 30px;
+    font-size: 50px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #000, #414141);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    }
+
+    table {
+    margin: 0 auto;
+    }
+
+    tr > :first-child {
+    text-align: right;
+    }
+
+    td {
+    width: 30%;
+    }
+
+    footer > p {
+    text-align: center;
+    color: #e1e1e1;
+    }
+    .container {
+    background-color: #e1e1e1;
+    max-width: 70%;
+    margin: auto;
+    border-radius: 20px;
+    min-height: 92vh;
+    }
+  </style>
+</head>
+<div class="container">
+  <h1>Survey Form</h1>
+  <form action="">
+    <table cellspacing="3" cellpadding="8">
+      <tr>
+        <td>Name:</td>
+        <td><input type="text" placeholder="Enter Name" required></td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td><input type="email" placeholder="Enter Email" required></td>
+      </tr>
+      <tr>
+        <td>Age:</td>
+        <td><input type="number" placeholder="Enter Age" required></td>
+      </tr>
+      <tr>
+        <td>Which option best describess your current position?</td>
+        <td>
+          <select>
+            <option value="fulltime" selected>Full Time</option>
+            <option value="Part time">Part Time</option>
+            <option value="Student">Student</option>
+            <option value="learning">Learner</option>
+          </select>
+        </td>
+      </tr>
+      <tr rowspan=3>
+        <td>Where did you first hear about us?</td>
+        <td><input type="radio" name="social" id="fb" value="Facebook"><label for="fb">Facebook</label></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="radio" name="social" id="ig" value="Instagram"><label for="ig">Instagram</label></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="radio" name="social" id="tweet" value="Twitter"><label for="fb">Twitter</label></td>
+      </tr>
+
+      <tr>
+        <td>What Other options do you consider befre buying from Us?</td>
+        <td>
+          <select>
+            <option value="default" selected>Select an Option</option>
+            <option value="op1">option 1</option>
+            <option value="op2">option 2</option>
+            <option value="op3">option 3</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Let Us Know for any Improvements</td>
+        <td><textarea name="feedback" cols="22" rows="2" placeholder="Your feedback  here..."></textarea></td>
+    </table>
+  </form>
+</div>
+<footer>
+  <p>Made with ❤️ by Aman Verma</p>
+</footer>
